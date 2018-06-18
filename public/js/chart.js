@@ -4,8 +4,8 @@
 // Could be broken into a different js file, maybe app.js
 $(document).ready(function(){
   $.ajax({
-    url: "http://localhost:8080/api/data",
-    // url: "https://appname.herokuapp.com/api/data",
+    // url: "http://localhost:8080/api/data",
+    url: "https://sleepy-river-20789.herokuapp.com/api/data",
     // url: "http://" + window.location.hostname + ":8080/api/data",
     method: "GET",
     dataType: 'json',
