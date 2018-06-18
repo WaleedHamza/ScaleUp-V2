@@ -13,10 +13,9 @@ $(document).ready(function () {
 
 $('#addDataBtn').on('click', function () {
   insertZone();
+  location.reload();
   console.log(' i have been clicked', zone);
-  // $("#building option:first").prop('disabled', true);
-  // $("#building option:first").attr('selected', true);
-  // $('select').material_select();
+
 });
 
 function insertZone() {
