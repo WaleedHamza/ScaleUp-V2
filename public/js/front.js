@@ -43,16 +43,16 @@ function insertZone() {
   console.log('this is the zone var front.js', zone);
 
   //clear inputs
-  $("#building").val("");
-  $("#zone").val("");
-  $("#electricUsed").val("");
-  $("#electricCap").val("");
-  $("#waterUsed").val("");
-  $("#waterCap").val("");
-  $("#hvacUsed").val("");
-  $("#hvacCap").val("");
-  $("#steamUsed").val("");
-  $("#steamCap").val("");
+  $("#building").empty();
+  $("#zone").empty();
+  $("#electricUsed").empty();
+  $("#electricCap").empty();
+  $("#waterUsed").empty();
+  $("#waterCap").empty();
+  $("#hvacUsed").empty();
+  $("#hvacCap").empty();
+  $("#steamUsed").empty();
+  $("#steamCap").empty();
 
 
   $.post("/api/data", zone).done(function (data) {

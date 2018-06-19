@@ -4,8 +4,8 @@
 // Could be broken into a different js file, maybe app.js
 $(document).ready(function(){
   $.ajax({
-    // url: "http://localhost:8080/api/data",
-    url: "https://sleepy-river-20789.herokuapp.com/api/data",
+    url: "http://localhost:8080/api/data",
+    // url: "https://sleepy-river-20789.herokuapp.com/api/data",
     // url: "http://" + window.location.hostname + ":8080/api/data",
     method: "GET",
     dataType: 'json',
@@ -71,7 +71,7 @@ $(document).ready(function(){
       };
 
       // Actual chart creation
-      const chartOne = document.getElementById('chartOne');
+      const chartOne = $('#chartOne');
       Chart.defaults.global.defaultFontFamily = 'lato';
       Chart.defaults.global.defaultFontSize = 16;
       Chart.defaults.global.defaultFontColor = 'white';
@@ -90,7 +90,7 @@ $(document).ready(function(){
           },
           title:{
             display: true,
-            text: 'This is ' + buildingNames[0] 
+            text: buildingNames[0] 
           }},
       });
 
@@ -134,7 +134,7 @@ var chart2data ={
 };
 
 // Actual chart2 creation
-const chartTwo = document.getElementById('chartTwo');
+const chartTwo = $('#chartTwo');
 
 var barChartTwo = new Chart(chartTwo, {
   type: 'bar',
@@ -150,7 +150,7 @@ var barChartTwo = new Chart(chartTwo, {
     },
     title:{
       display: true,
-      text: 'This is ' + buildingNames[4] 
+      text: buildingNames[4] 
     }},
 });
 
